@@ -1,0 +1,10 @@
+import pprint
+message = 'Insert the message that you want here and the following code will provide a character count for the message and display it in pretty print'
+
+count = {}
+
+for character in message:
+  count.setdefault(character, 0)
+  count[character] = count[character] + 1
+
+pprint.pprint(count)
